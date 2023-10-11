@@ -501,6 +501,7 @@ Aさんがリモートリポジトリからローカルリポジトリに変更�
 | プッシュ | git push origin {プッシュするブランチ名} | 変更内容とコミット分をリモートリポジトリへ反映 |
 | プル | git pull origin {プルするブランチ名} | リモートリポジトリのデータをローカルリポジトリに反映 |
 
+※RR:リモートリポジトリ, LR:ローカルリポジトリの意味
 ![イメージ図](images/git-workflow.png)"全体のワークフロー"
 <!-- 元データ）https://www.figma.com/file/Iv78Vu0NVSyU26QWspWMuY/Autoflow-(Community)?type=design&node-id=0%3A1&mode=design&t=yH9owQxCfGkPH4gr-1 -->
 
@@ -529,4 +530,4 @@ https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/generati
 GitHubアカウントへの SSH キーの追加について
 https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 
--->
+--> 
