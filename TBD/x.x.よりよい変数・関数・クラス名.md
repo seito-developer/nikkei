@@ -64,3 +64,12 @@
 - その他（OTH） その他の変数。
 Byckling, P., & Sajaniemi, J. (2005). Using Roles of Variables in Teaching: Effects on Program Construction. In PPIG (p. 23).
 https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=7cac178dbbffb93d100788cef3c30dac598d79a7
+
+# チューニング
+- 容量を軽く
+- リクエスト数を減らす
+- pictureタグ
+- headタグ内の情報を減らす
+- width, heightを設定
+
+# ディレクトリ構成
