@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: blue;
+}
