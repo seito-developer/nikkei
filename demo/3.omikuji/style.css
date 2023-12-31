@@ -1,10 +1,16 @@
-body {
+.omikuji {
     text-align: center;
-    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 5px solid #666;
 }
-
-#result {
-    margin-top: 20px;
+.omikuji-result {
     font-size: 24px;
-    color: blue;
+    margin-bottom: 20px;
+}
+.omikuji-heaadline {
+    margin: 0 0 20px;
+}
+.omikuji-button {
+    padding: 10px 20px;
+    cursor: pointer;
 }
