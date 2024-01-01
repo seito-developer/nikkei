@@ -19,14 +19,16 @@
     }
 
     const playOmikuji = () => {
-        const slotAnimationTimer = setInterval(() => {
+        const slotImageChange = () => {
             const randomKey = getRandomNumber(0,6);
             $result.setAttribute("src", omikujiArray[randomKey]);
-        }, SLOT_TIME);
+        }
+        const slotAnimationTimer = setInterval(slotImageChange, SLOT_TIME);
 
         setTimeout(() => {
             clearInterval(slotAnimationTimer);
-            $result.setAttribute("src", omikujiArray[getRandomNumber(0,6)]);
+            const randomKey = getRandomNumber(0,6);
+            $result.setAttribute("src", omikujiArray[randomKey]);
         }, DURATION);
     };
 
