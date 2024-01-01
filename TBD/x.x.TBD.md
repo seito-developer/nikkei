@@ -47,3 +47,6 @@
 - よく使うメソッド（
 - よく使うプロパティ（length,
 - よく使うオブジェクト（String, Number, Math)
+
+
+- 糖衣構文 … syntax sugar

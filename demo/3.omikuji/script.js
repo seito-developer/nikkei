@@ -1,27 +1,34 @@
-const playOmikuji = () => {
-    const DURATION = 2000;
+(() => {
+    const DURATION = 3000;
     const SLOT_TIME = 100;
-    const omikuji = {
-        '大吉': './images/omikuji-7.png',
-        '中吉': './images/omikuji-6.png',
-        '小吉': './images/omikuji-5.png',
-        '吉': './images/omikuji-4.png',
-        '末吉': './images/omikuji-3.png',
-        '凶': './images/omikuji-2.png',
-        '大凶': './images/omikuji-1.png'
+    const omikujiArray = [
+        './images/omikuji-7.png',
+        './images/omikuji-6.png',
+        './images/omikuji-5.png',
+        './images/omikuji-4.png',
+        './images/omikuji-3.png',
+        './images/omikuji-2.png',
+        './images/omikuji-1.png'
+    ];
+    const $result = document.getElementById('js-result');
+
+    const getRandomNumber = (argMin, argMax) => {
+        const min = Math.ceil(argMin);
+        const max = Math.floor(argMax);
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+
+    const playOmikuji = () => {
+        const slotAnimationTimer = setInterval(() => {
+            const randomKey = getRandomNumber(0,6);
+            $result.setAttribute("src", omikujiArray[randomKey]);
+        }, SLOT_TIME);
+
+        setTimeout(() => {
+            clearInterval(slotAnimationTimer);
+            $result.setAttribute("src", omikujiArray[getRandomNumber(0,6)]);
+        }, DURATION);
     };
-    const keys = Object.keys(omikuji);
-    const $result = document.getElementById('result');
 
-    const slotAnimationTimer = setInterval(() => {
-        const randomKey = keys[Math.floor(Math.random() * keys.length)];
-        $result.setAttribute("src", omikuji[randomKey]);
-    }, SLOT_TIME);
-
-    setTimeout(() => {
-        clearInterval(slotAnimationTimer);
-        $result.setAttribute("src", omikuji[keys[Math.floor(Math.random() * keys.length)]]);
-    }, DURATION);
-};
-
-document.getElementById('drawButton').addEventListener('click', playOmikuji);
+    document.getElementById('js-button').addEventListener('click', playOmikuji);
+})();
