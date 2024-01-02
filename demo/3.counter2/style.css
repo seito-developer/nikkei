@@ -9,10 +9,10 @@
     margin-bottom: 10px;
 }
 
-.increase-button {
-    border: 0;
+.button {
     font-size: 20px;
     padding: 10px 20px;
+    border: 0;
     background-color: #000;
     color: #fff;
     font-weight: bold;
@@ -21,7 +21,7 @@
     margin: 0 5px;
 }
 
-.increase-button:hover {
+.button:hover {
     opacity: 0.8;
     transition: opacity .25s;
 }
