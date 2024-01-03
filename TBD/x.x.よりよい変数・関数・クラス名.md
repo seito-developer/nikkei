@@ -73,3 +73,7 @@ https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=7cac178dbbffb93d1
 - width, heightを設定
 
 # ディレクトリ構成
+
+- import / from, export
+- async, await
+- 
